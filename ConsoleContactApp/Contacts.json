@@ -1,0 +1,70 @@
+{
+  "theList" : [ {
+    "name" : "Noah Vandervelden",
+    "streetName" : "2847 E 7th Street",
+    "city" : "Kansas City",
+    "state" : "MO",
+    "postalCode" : "64124",
+    "country" : "US",
+    "phoneNumber" : "816-756-4005",
+    "photoName" : "myphoto.jpg",
+    "email" : "noah.vandy@gmail.com",
+    "relationship" : "Me",
+    "birthday" : "10-14-1999",
+    "desc" : "This is my own contact"
+  }, {
+    "name" : "Grand Canyon University",
+    "streetName" : "3300 West Camelback Road",
+    "city" : "Pheonix",
+    "state" : "AZ",
+    "postalCode" : "85017",
+    "country" : "US",
+    "phoneNumber" : "1-800-4123",
+    "photoName" : "gcu.jpg",
+    "email" : "Gcu@gcu.edu",
+    "desc" : "Christian college in pheonix arizona",
+    "open" : "7:00am",
+    "close" : "9:00pm",
+    "daysOfWeekOpen" : [ false, true, true, true, true, true, false ],
+    "url" : "gcu.com"
+  }, {
+    "name" : "Blake Wilson",
+    "streetName" : "5000 Whispering Oaks ln",
+    "city" : "Smithville",
+    "state" : "MO",
+    "postalCode" : "64125",
+    "country" : "US",
+    "phoneNumber" : "816-213-1235",
+    "photoName" : "contactpic.jpg",
+    "email" : "blakewilson@gmail.com",
+    "relationship" : "Friend",
+    "birthday" : "05-22-2000",
+    "desc" : "This is my roommate Blake"
+  }, {
+    "name" : "Caleb Pae",
+    "streetName" : "1200 Half Cap rd",
+    "city" : "Kansas City",
+    "state" : "MO",
+    "postalCode" : "64124",
+    "country" : "US",
+    "phoneNumber" : "815-829-2947",
+    "photoName" : "thatonepic.png",
+    "email" : "cpae@gmail.com",
+    "relationship" : "Best Friend",
+    "birthday" : "08-20-99",
+    "desc" : "Moved back to Italy"
+  }, {
+    "name" : "Jason Stine",
+    "streetName" : "Nowhere",
+    "city" : "Pheonix",
+    "state" : "AZ",
+    "postalCode" : "85017",
+    "country" : "US",
+    "phoneNumber" : "5678923333",
+    "photoName" : "Cutie.jpg",
+    "email" : "jSON@gmail.com",
+    "relationship" : "Friend",
+    "birthday" : "idk",
+    "desc" : "Coding class friend"
+  } ]
+}
