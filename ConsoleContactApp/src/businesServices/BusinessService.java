@@ -28,33 +28,16 @@ public class BusinessService {
 	
 	
 	public void saveAllLists(AddressBook list) {
-		ObjectMapper om = new ObjectMapper();
+	
+		DataAccessService das = new FileIOService();
+		das.writeAllData(this);
 		
-		try {
-			om.writerWithDefaultPrettyPrinter().writeValue(new File("Contacts.json"), list);
-		} catch (JsonGenerationException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (JsonMappingException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 
 	}
 	
 	public AddressBook loadAllLists() {
-		try {
-			AddressBook list = new AddressBook();
-			
-			list = new ObjectMapper().readerFor(BusinessService.class).readValue(new File("Contacts.json"));
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return list;
+		DataAccessService das = new FileIOService();
+		return das.readAllData().getList();
 	}
 	
 	public AddressBook getList() {

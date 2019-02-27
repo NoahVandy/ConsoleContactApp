@@ -120,6 +120,9 @@ public class Main {
 			case "Save":
 				bs.saveAllLists(bs.list);
 				break;
+			case "Load":
+				loadList(bs);
+				break;
 			default:
 				System.out.println(
 						"Please enter one of the valid commands, 'Add', 'Delete', 'Search', 'Exit', and make sure that your input matches exactly");
@@ -199,27 +202,27 @@ public class Main {
 	}
 
 	public static void setUpData(BusinessService bs) {
-//		Boolean[] days = { false, true, true, true, true, true, false };
-//
-//		BaseContact NV = new PersonContact("Noah Vandervelden", "2847 E 7th Street", "Kansas City", "MO", "64124", "US",
-//				"816-756-4005", "noah.vandy@gmail.com", "myphoto.jpg", "Me", "10-14-1999", "This is my own contact");
-//		bs.list.addOne(NV);
-//
-//		BaseContact GCU = new BusinessContact("Grand Canyon University", "3300 West Camelback Road", "Pheonix", "AZ",
-//				"85017", "US", "1-800-4123", "Gcu@gcu.edu", "gcu.jpg", "Christian college in pheonix arizona", "7:00am",
-//				"9:00pm", days, "gcu.com");
-//		bs.list.addOne(GCU);
-//
-//		BaseContact BW = new PersonContact("Blake Wilson", "5000 Whispering Oaks ln", "Smithville", "MO", "64125", "US",
-//				"816-213-1235", "blakewilson@gmail.com", "contactpic.jpg", "Friend", "05-22-2000",
-//				"This is my roommate Blake");
-//		bs.list.addOne(BW);
-//
-//		BaseContact CP = new PersonContact("Caleb Pae", "1200 Half Cap rd", "Kansas City", "MO", "64124", "US",
-//				"815-829-2947", "cpae@gmail.com", "thatonepic.png", "Best Friend", "08-20-99", "Moved back to Italy");
-//		bs.list.addOne(CP);
+		Boolean[] days = { false, true, true, true, true, true, false };
+
+		BaseContact NV = new PersonContact("Noah Vandervelden", "2847 E 7th Street", "Kansas City", "MO", "64124", "US",
+				"816-756-4005", "noah.vandy@gmail.com", "myphoto.jpg", "Me", "10-14-1999", "This is my own contact");
+		bs.list.addOne(NV);
+
+		BaseContact GCU = new BusinessContact("Grand Canyon University", "3300 West Camelback Road", "Pheonix", "AZ",
+				"85017", "US", "1-800-4123", "Gcu@gcu.edu", "gcu.jpg", "Christian college in pheonix arizona", "7:00am",
+				"9:00pm", days, "gcu.com");
+		bs.list.addOne(GCU);
+
+		BaseContact BW = new PersonContact("Blake Wilson", "5000 Whispering Oaks ln", "Smithville", "MO", "64125", "US",
+				"816-213-1235", "blakewilson@gmail.com", "contactpic.jpg", "Friend", "05-22-2000",
+				"This is my roommate Blake");
+		bs.list.addOne(BW);
+
+		BaseContact CP = new PersonContact("Caleb Pae", "1200 Half Cap rd", "Kansas City", "MO", "64124", "US",
+				"815-829-2947", "cpae@gmail.com", "thatonepic.png", "Best Friend", "08-20-99", "Moved back to Italy");
+		bs.list.addOne(CP);
 		
-		bs.list = bs.loadAllLists();
+		
 		
 	}
 
@@ -403,4 +406,7 @@ public class Main {
 		}
 	}
 
+	public static void loadList(BusinessService bs) { 
+		bs.list = bs.loadAllLists();
+	}
 }

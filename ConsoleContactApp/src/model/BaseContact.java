@@ -1,5 +1,18 @@
 package model;
 
+import com.fasterxml.jackson.annotation.JsonSubTypes;
+import com.fasterxml.jackson.annotation.JsonSubTypes.Type;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
+@JsonTypeInfo(
+		use = JsonTypeInfo.Id.NAME, 
+		include = JsonTypeInfo.As.PROPERTY, 
+		property = "type")
+@JsonSubTypes({ 
+	@Type(value = BusinessContact.class, name = "CarContact"), 
+	@Type(value = PersonContact.class, name = "PersonContact") 
+})
+
 public abstract class BaseContact implements Comparable<BaseContact> {
 	protected String name;
 	protected String streetName;
