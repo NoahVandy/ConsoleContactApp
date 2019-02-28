@@ -17,8 +17,6 @@ public class FileIOService implements DataAccessService {
 		BusinessService bs = new BusinessService();
 		
 		try {
-			
-			
 			bs = new ObjectMapper().readerFor(BusinessService.class).readValue(new File("Contacts.json"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

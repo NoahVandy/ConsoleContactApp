@@ -15,7 +15,7 @@
       "birthday" : "10-14-1999",
       "desc" : "This is my own contact"
     }, {
-      "type" : "CarContact",
+      "type" : "BusinessContact",
       "name" : "Grand Canyon University",
       "streetName" : "3300 West Camelback Road",
       "city" : "Pheonix",
@@ -60,18 +60,18 @@
       "desc" : "Moved back to Italy"
     }, {
       "type" : "PersonContact",
-      "name" : "Shad is the best",
-      "streetName" : "best Lane",
-      "city" : "Pheoninx",
-      "state" : "AZ",
-      "postalCode" : "85017",
-      "country" : "US",
-      "phoneNumber" : "56789332",
-      "photoName" : "jpg.jpg",
-      "email" : "Shad@sluiter.com",
-      "relationship" : "Professor and best friend",
-      "birthday" : "7-11-80",
-      "desc" : "Bestie"
+      "name" : "n",
+      "streetName" : "n",
+      "city" : "n",
+      "state" : "n",
+      "postalCode" : "n",
+      "country" : "n",
+      "phoneNumber" : "n",
+      "photoName" : "n",
+      "email" : "n",
+      "relationship" : "n",
+      "birthday" : "n",
+      "desc" : "n"
     } ]
   }
 }

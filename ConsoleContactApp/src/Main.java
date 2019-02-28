@@ -14,7 +14,7 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		BusinessService bs = new BusinessService();
-		setUpData(bs);
+		bs.list = bs.loadAllLists();
 //
 //		// making a new person
 //		System.out.println("<-------Making new person------->");
@@ -55,7 +55,7 @@ public class Main {
 		String decision = "";
 
 		// asking the user for a decision
-		System.out.println("'Add', 'Delete', 'Search', 'Display', 'Edit', 'Contact', 'Save', 'Exit'");
+		System.out.println("'Add', 'Delete', 'Search', 'Display', 'Edit', 'Contact', 'Save', 'Load', 'Exit'");
 		// this while loop will run until the user types in "exit"
 		while (!decision.equalsIgnoreCase("Exit")) {
 			decision = kb.nextLine();
@@ -122,7 +122,7 @@ public class Main {
 				break;
 			case "Load":
 				loadList(bs);
-				break;
+				break; 
 			default:
 				System.out.println(
 						"Please enter one of the valid commands, 'Add', 'Delete', 'Search', 'Exit', and make sure that your input matches exactly");

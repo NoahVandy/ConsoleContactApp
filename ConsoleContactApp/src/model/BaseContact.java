@@ -9,7 +9,7 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 		include = JsonTypeInfo.As.PROPERTY, 
 		property = "type")
 @JsonSubTypes({ 
-	@Type(value = BusinessContact.class, name = "CarContact"), 
+	@Type(value = BusinessContact.class, name = "BusinessContact"), 
 	@Type(value = PersonContact.class, name = "PersonContact") 
 })
 
